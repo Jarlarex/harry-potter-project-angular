@@ -1,0 +1,28 @@
+<div *ngIf="visible" class="modal" tabindex="-1" role="dialog" style="display: block;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+        <h5 class="modal-title" id="characterDetailModalLabel">{{ character.name }}</h5>
+        <button type="button" class="close" (click)="closeModal()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img [src]="character.image" class="img-fluid mb-3">
+        <p><strong>House:</strong> {{ character.house }}</p>
+        <p><strong>Patronus:</strong> {{ character.patronus }}</p>
+        <p><strong>Alternate Names:</strong> {{ character.alternate_names.join(', ') }}</p>
+        <p><strong>Species:</strong> {{ character.species }}</p>
+        <p><strong>Gender:</strong> {{ character.gender }}</p>
+        <p><strong>Date of Birth:</strong> {{ character.dateOfBirth }}</p>
+        <p><strong>Wizard Status:</strong> {{ character.wizard ? 'Yes' : 'No' }}</p>
+        <p><strong>Ancestry:</strong> {{ character.ancestry }}</p>
+        <p><strong>Eye Colour:</strong> {{ character.eyeColour }}</p>
+        <p><strong>Hair Colour:</strong> {{ character.hairColour }}</p>
+        <p><strong>Wand Details:</strong> {{ character.wand.wood }} wood, {{ character.wand.core }} core, {{ character.wand.length }} inches</p>
+        <p><strong>Hogwarts Role:</strong> {{ character.hogwartsStudent ? 'Student' : character.hogwartsStaff ? 'Staff' : 'None' }}</p>
+        <p><strong>Actor:</strong> {{ character.actor }}</p>
+      </div>
+    </div>
+  </div>
+</div>

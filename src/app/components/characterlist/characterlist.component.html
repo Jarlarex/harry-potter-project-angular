@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="card-full col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let character of characters"> <!-- Adjusted grid classes -->
+      <div class="card position-relative">
+        <img class="card-img-top" [src]="character.image" alt="Character image">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.name }}</h5>
+          <p class="card-text">{{ character.house }}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+          <span (click)="openCharacterDetail(character)">View Details</span>
+          <button (click)="toggleLike(character, $event); $event.stopPropagation()" class="like-button d-flex align-items-center justify-content-center">
+            <i [class]="character.liked ? 'fas fa-heart' : 'far fa-heart'"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#" (click)="previousPage()">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">Page {{currentPage}} of {{ pageSize }}</a></li>
+    <li class="page-item"><a class="page-link" href="#" (click)="nextPage()">Next</a></li>
+  </ul>
+  <app-character-detail *ngIf="selectedCharacter" [character]="selectedCharacter" (close)="handleCloseDetail()"></app-character-detail>
+</div>

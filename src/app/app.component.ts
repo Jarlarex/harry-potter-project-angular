@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { CharacterlistComponent } from './components/characterlist/characterlist.component';
+import { LikedCharactersComponent } from './components/liked-characters/liked-characters.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CharacterlistComponent, HttpClientModule,
+    CommonModule, RouterLink, RouterLinkActive
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'harry-potter-project';

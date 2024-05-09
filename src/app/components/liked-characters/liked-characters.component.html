@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="card-full col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let character of likedCharacters"> <!-- Adjusted grid classes -->
+      <div class="card position-relative">
+        <img class="card-img-top" [src]="character.image" alt="Character image">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.name }}</h5>
+          <p class="card-text">{{ character.house }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

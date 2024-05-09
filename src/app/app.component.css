@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English+SC&display=swap');
+
+body {
+  background-image: url('../assets/images/background.jpg');
+  margin-top: -50px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border: 2px solid #856F38;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  color: #856F38;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  background-color: #856F38 !important;
+  font-size: 1.2em;
+}
+
+.nav-link {
+  font-family: 'IM Fell English SC', serif;
+  color: #f0e8c7 !important;
+}
+
+.nav-link.active {
+  color: #2F444F !important;
+}
+
+footer {
+  height: 50px;
+  font-family: 'IM Fell English SC', serif;
+  color: #856F38;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-top: 2px solid #856F38;
+}
