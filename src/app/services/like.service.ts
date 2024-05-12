@@ -7,7 +7,7 @@ import { Character } from '../interfaces/character.model';
   providedIn: 'root'
 })
 export class LikeService {
-  private likeApiUrl = 'http://localhost:5050/likes';
+  private likeApiUrl = 'http://34.248.120.225:5050/likes';
 
   constructor(private http: HttpClient) {}
 
