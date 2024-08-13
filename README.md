@@ -1,13 +1,13 @@
 # Harry Potter Character Encyclopedia
 
 ## Introduction
-Welcome to the Harry Potter Character Encyclopedia! This web application is designed to offer fans of the Harry Potter universe a detailed and interactive way to learn about their favorite characters. Explore characters by their house affiliations, patronuses, wand compositions, and much more!
+Welcome to the Harry Potter Character Encyclopedia. This web application is designed to offer fans of the Harry Potter universe a detailed and interactive way to learn about their favorite characters. Explore characters by their house affiliations, patronuses, wand types, and much more.
 
 ## Features
 - **Browse Characters**: View a comprehensive list of characters from the Harry Potter universe.
 - **Character Details**: Click on any character to get detailed information, such as house, patronus, and wand details.
 - **Favoriting System**: Like your favorite characters and view them in a separate tab.
-- **Responsive Design**: Accessible on any device, ensuring a smooth and magical user experience.
+- **Responsive Design**: Accessible on any device, ensuring a smooth user experience.
 
 ## Technologies
 This project is built using the following technologies:
